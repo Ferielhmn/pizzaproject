@@ -7,6 +7,7 @@
    justify-content:space-between;
    position:sticky;
    top:0;
+   z-index: 100;
 }
 .item{
     flex:1;
@@ -14,11 +15,8 @@
     align-items:center;/*they are all in the same ligne*/
 }
 .item:nth-child(2){ /*nth-cild se sont les 3fils*/
-flex:3;/*wee will give to hime 3 of space of work*/
-}
-.item:last-child(3){
-justify-content:flex-end;
-
+flex:2;/*wee will give to hime 3 of space of work*/
+justify-content: center;
 }
 .callButton{
 background-color: #e1532f;
@@ -56,6 +54,17 @@ color:white;
 }
 .cart{
     position: relative;
+
+}
+.item .list .listitem :hover{
+    padding: 10px 10px;
+    color:#e1532f;
+    background:#b2d8b2;
+    ;
+    border-radius: 20px;
+    gap:10px;
+    transition:0.3s ease ;
+
 
 }
 .counter{

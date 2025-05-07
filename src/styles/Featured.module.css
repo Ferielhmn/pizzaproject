@@ -1,6 +1,9 @@
 .container{
     height:calc(100vh - 100px);
     background-color: #e1532f;
+    top: 0;
+    background-color: #e1532f;
+    z-index: 100;
 
 display :flex;
 }
@@ -9,14 +12,16 @@ display :flex;
   display:flex;
   margin:auto;
   cursor:pointer;
-  z-index:2 ;
+  z-index:1;
 }
 .wrapper{
     width: 300vw;
     height: 100%;
+    z-index: 1000;
 }
 .imgContainer{
     width: 1vw;
     height: 100%;
     position: relative;
+    z-index: 1000;
 }

@@ -1,20 +1,41 @@
-.containerr{
+.containerr {
     text-align: center;
     padding: 20px 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-.desc{
-font-size: 19px;
-color:#444;
-}
-.title{
-    text-align: center;
-}
-.wrapper{
-    width: 100%;
-    display: flex; /*make them horizontal*/
-    align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
-}
+  }
+  
+  .desc {
+    font-size: 19px;
+    color: #444;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .wrapper {
+      width: 100%;
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* centre les éléments horizontalement */
+      align-items: center;    /* assure que tous les éléments ont la même hauteur */
+      gap: 20px;
+      padding: 20px;
+    }
+    
+  
+  
+  
+  .wrapper a {
+
+    width: calc(30% - 20px); /* ajuste la largeur en fonction du gap */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
